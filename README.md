@@ -85,8 +85,8 @@
 - **Method**: `GET`
 - **설명**: 지정한 시간 구간의 분 단위 CPU 사용량을 조회합니다.
 - **Parameters**:
-  - `from` (필수): 조회 시작 시간 (ISO 8601 형식)
-  - `to` (필수): 조회 종료 시간 (ISO 8601 형식)
+  - `from` (필수): 조회 시작 시간 (LocalDateTime)
+  - `to` (필수): 조회 종료 시간 (LocalDateTime)
 - **Response Content-Type**: `application/json`
 - **Body**: CPU 사용량 데이터 리스트
 
@@ -130,7 +130,7 @@
 - **Method**: `GET`
 - **설명**: 지정한 날짜의 시간 단위 CPU 최소/평균/최대 사용량을 조회합니다.
 - **Parameters**:
-  - `date` (필수): 조회 날짜 (ISO 8601 형식)
+  - `date` (필수): 조회 날짜 (LocalDate)
 - **Response Content-Type**: `application/json`
 - **Body**: CPU 사용량 통계 (최소, 최대, 평균)
 
@@ -184,8 +184,8 @@
 - **Method**: `GET`
 - **설명**: 지정한 날짜 구간의 일 단위 CPU 최소/최대/평균 사용량을 조회합니다.
 - **Parameters**:
-  - `from` (필수): 조회 시작 날짜 (ISO 8601 형식)
-  - `to` (필수): 조회 종료 날짜 (ISO 8601 형식)
+  - `from` (필수): 조회 시작 날짜 (LocalDate)
+  - `to` (필수): 조회 종료 날짜 (LocalDate)
 - **Response Content-Type**: `application/json`
 - **Body**: CPU 사용량 통계 (최소, 최대, 평균)
 
